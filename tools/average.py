@@ -4,7 +4,7 @@ import sys
 
 
 def average(values: list[float]) -> float | None:
-    if not values:
+    if not values:  # nothing to average
         return None
     return sum(values) / len(values)
 
