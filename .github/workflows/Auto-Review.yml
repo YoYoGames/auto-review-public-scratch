@@ -18,7 +18,10 @@ jobs:
       && (github.event.action != 'labeled' || github.event.label.name == 'auto-review')
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    environment: auto-review-dispatch
+    # the key's environment, but not a deployment on the PR
+    environment:
+      name: auto-review-dispatch
+      deployment: false
     steps:
       - name: Get a dispatch token
         id: token
