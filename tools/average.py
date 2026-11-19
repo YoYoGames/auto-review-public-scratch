@@ -2,10 +2,9 @@ import sys
 
 
 def average(values):
-    total = 0
-    for i in range(1, len(values)):
-        total += values[i]
-    return total / len(values)
+    if not values:
+        return None
+    return sum(values) / len(values)
 
 
 def read_numbers(path):
