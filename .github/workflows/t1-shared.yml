@@ -1,9 +1,0 @@
-name: T1 shared review workflow
-on:
-  workflow_dispatch:
-  push:
-    branches: [main]
-permissions: {}
-jobs:
-  call:
-    uses: YoYoGames/ai-tools/.github/workflows/auto-review.yml@main
