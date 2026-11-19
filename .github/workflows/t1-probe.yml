@@ -1,0 +1,9 @@
+name: T1 minimal private workflow
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions: {}
+jobs:
+  call:
+    uses: YoYoGames/auto-review-relay/.github/workflows/t1-probe.yml@main
