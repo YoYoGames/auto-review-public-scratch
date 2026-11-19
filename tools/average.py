@@ -1,3 +1,5 @@
+"""Print the average of the numbers in a file, one per line."""
+
 import sys
 
 
