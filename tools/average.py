@@ -16,5 +16,5 @@ def read_numbers(path: str) -> list[float]:
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        sys.exit("usage: average.py FILE")
+        sys.exit(f"usage: {sys.argv[0]} FILE")
     print(average(read_numbers(sys.argv[1])))
