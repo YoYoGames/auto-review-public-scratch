@@ -8,8 +8,8 @@ def average(values):
 
 
 def read_numbers(path):
-    f = open(path)
-    return [int(line) for line in f.readlines()]
+    with open(path) as f:
+        return [float(line) for line in f if line.strip()]
 
 
 if __name__ == "__main__":
