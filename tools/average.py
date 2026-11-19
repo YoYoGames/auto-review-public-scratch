@@ -10,7 +10,7 @@ def average(values: list[float]) -> float | None:
 
 
 def read_numbers(path: str) -> list[float]:
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         return [float(line) for line in f if line.strip()]
 
 
