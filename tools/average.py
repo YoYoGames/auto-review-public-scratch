@@ -15,4 +15,6 @@ def read_numbers(path):
 
 
 if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        sys.exit("usage: average.py FILE")
     print(average(read_numbers(sys.argv[1])))
