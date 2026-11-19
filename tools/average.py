@@ -19,4 +19,4 @@ if __name__ == "__main__":
         sys.exit(f"usage: {sys.argv[0]} FILE")
     print(average(read_numbers(sys.argv[1])))
 
-# end
+# end of file
